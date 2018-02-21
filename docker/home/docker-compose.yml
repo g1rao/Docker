@@ -1,0 +1,11 @@
+version: '2'
+services:
+  webserver:
+    build: /container1
+    ports:
+      - "1995:8080"
+  imageserver:
+    build: /container2
+    ports:
+      - "1996:8000"
+

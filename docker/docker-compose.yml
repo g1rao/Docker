@@ -1,0 +1,16 @@
+version: '2'
+services:
+    gerrit:
+       image: gerrit
+       ports:
+         - "1010:8080"
+         - "29418:29418"
+    jenkins:
+       image: jenkins
+       ports:
+         - "1011:8080"
+    registry:
+       image: registry
+       ports:
+         - "5000:5000"
+
